@@ -1,5 +1,16 @@
 # Bioinfo_sh_Scripts
 ## Bash Scripts for Bioinformatics
+### aa_count.sh
+This script take protein fasta file as input and return the amino acids composition
+```bash
+$ bash aa_count.sh fasta_file
+```
+To save the output run `$ bash aa_count.sh fasta_file > result.tsv`
+
+**Linux command to get the amino acids count**
+```bash
+$ cat fasta_file | grep -v ">" | grep -o "[ACDEFGHIKLMNOPQRSTUVWY]" | sort | uniq -c
+```
 ## Linux Commands
 Display the message "Hello, World!"
 ```bash
