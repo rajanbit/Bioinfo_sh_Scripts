@@ -11,6 +11,17 @@ To save the output run `$ bash aa_count.sh fasta_file > result.tsv`
 ```bash
 $ cat fasta_file | grep -v ">" | grep -o "[ACDEFGHIKLMNOPQRSTUVWY]" | sort | uniq -c
 ```
+### nt_count.sh
+This script take DNA fasta file as input and return the nucleobase composition
+```bash
+$ bash nt_count.sh fasta_file
+```
+To save the output run `$ bash nt_count.sh fasta_file > result.tsv`
+
+**Linux command to get the base count**
+```bash
+$ cat fasta_file | grep -v ">" | grep -o "[ATGC]" | sort | uniq -c
+```
 ## Linux Commands
 Display the message "Hello, World!"
 ```bash
