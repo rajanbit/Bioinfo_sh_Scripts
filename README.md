@@ -79,3 +79,39 @@ List all the files with (a) initial letters and suffix (.txt)
 ```bash
 $ ls a*.txt
 ```
+File copying
+```bash
+cp file.txt dir_name
+cp file1.txt file2.txt dir_name
+cp file.txt path/to/dir
+```
+File moving
+```bash
+mv file.txt dir_name
+mv file.txt path/to/dir
+```
+File creation
+```bash
+touch file.txt
+touch file1.txt file2.txt file3.txt
+```
+Removing a file
+```bash
+rm file.txt
+```
+Removing a file while asking for confirmation y/n
+```bash
+rm -i file.txt
+```
+Creating a directory
+```bash
+mkdir dir_name
+```
+Removing an empty directory
+```bash
+rmdir dir_name
+```
+Removing a directory
+```bash
+rm -r dir_name
+```
