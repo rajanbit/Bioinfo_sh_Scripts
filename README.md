@@ -22,7 +22,7 @@ To save the output run `$ bash nt_count.sh fasta_file > result.tsv`
 ```bash
 $ cat fasta_file | grep -v ">" | grep -o "[ATGC]" | sort | uniq -c
 ```
-## Linux Commands
+# Linux Commands
 Display the message "Hello, World!"
 ```bash
 $ echo Hello, World!
@@ -42,6 +42,10 @@ $ cd ..
 Change Directory
 ```bash
 $ cd Directory/
+```
+Change directory (out current directory and in another directory)
+```bash
+cd ../dir_name
 ```
 List all the contents within a directory
 ```bash
@@ -114,4 +118,47 @@ rmdir dir_name
 Removing a directory
 ```bash
 rm -r dir_name
+```
+File viewing; more(unidirectional viewing) less(bidirectional viewing)
+```bash
+more file.txt
+less file.txt
+```
+View top 10 lines of a file
+```bash
+head file.txt
+```
+View top 50 lines of a file
+```bash
+head -50 file.txt
+```
+View bottom 10 lines of a file
+```bash
+tail file.txt
+```
+View bottom 50 lines of a file
+```bash
+tail -50 file.txt
+```
+File reading and concatenation (cat: concatenate)
+
+Reading the file content
+```bash
+cat file.txt
+```
+Concatenate two files
+```bash
+cat file1.txt file2.txt
+```
+Concatenate two files and create a new file having the content of both the files
+```bash
+cat file1.txt file2.txt > file3.txt
+```
+Writing a file by creating it (if the file is already present and not empty, then it will be overwritten)
+```bash
+cat > file.txt
+```
+Appending a file
+```bash
+cat >> file.txt
 ```
