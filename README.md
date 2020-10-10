@@ -45,7 +45,7 @@ $ cd Directory/
 ```
 Change directory (out current directory and in another directory)
 ```bash
-cd ../dir_name
+$ cd ../dir_name
 ```
 List all the contents within a directory
 ```bash
@@ -85,80 +85,108 @@ $ ls a*.txt
 ```
 File copying
 ```bash
-cp file.txt dir_name
-cp file1.txt file2.txt dir_name
-cp file.txt path/to/dir
+$ cp file.txt dir_name
+$ cp file1.txt file2.txt dir_name
+$ cp file.txt path/to/dir
 ```
 File moving
 ```bash
-mv file.txt dir_name
-mv file.txt path/to/dir
+$ mv file.txt dir_name
+$ mv file.txt path/to/dir
 ```
 File creation
 ```bash
-touch file.txt
-touch file1.txt file2.txt file3.txt
+$ touch file.txt
+$ touch file1.txt file2.txt file3.txt
 ```
 Removing a file
 ```bash
-rm file.txt
+$ rm file.txt
 ```
 Removing a file while asking for confirmation y/n
 ```bash
-rm -i file.txt
+$ rm -i file.txt
 ```
 Creating a directory
 ```bash
-mkdir dir_name
+$ mkdir dir_name
 ```
 Removing an empty directory
 ```bash
-rmdir dir_name
+$ rmdir dir_name
 ```
 Removing a directory
 ```bash
-rm -r dir_name
+$ rm -r dir_name
 ```
 File viewing; more(unidirectional viewing) less(bidirectional viewing)
 ```bash
-more file.txt
-less file.txt
+$ more file.txt
+$ less file.txt
 ```
 View top 10 lines of a file
 ```bash
-head file.txt
+$ head file.txt
 ```
 View top 50 lines of a file
 ```bash
-head -50 file.txt
+$ head -50 file.txt
 ```
 View bottom 10 lines of a file
 ```bash
-tail file.txt
+$ tail file.txt
 ```
 View bottom 50 lines of a file
 ```bash
-tail -50 file.txt
+$ tail -50 file.txt
 ```
 File reading and concatenation (cat: concatenate)
 
 Reading the file content
 ```bash
-cat file.txt
+$ cat file.txt
 ```
 Concatenate two files
 ```bash
-cat file1.txt file2.txt
+$ cat file1.txt file2.txt
 ```
 Concatenate two files and create a new file having the content of both the files
 ```bash
-cat file1.txt file2.txt > file3.txt
+$ cat file1.txt file2.txt > file3.txt
 ```
 Writing a file by creating it (if the file is already present and not empty, then it will be overwritten)
 ```bash
-cat > file.txt
+$ cat > file.txt
 ```
 Appending a file
 ```bash
-cat >> file.txt
+$ cat >> file.txt
+```
+Count no_lines, no_words, no_characters and file_name
+```bash
+$ wc file.txt
+```
+Count no_lines
+```bash
+$ wc -l file.txt
+```
+Count no_of_items in a directory
+```bash
+$ ls | wc -l
+```
+Sorting file content alphabetically
+```bash
+$ sort file.txt
+```
+Sorting file content reverse alphabetically
+```bash
+$ sort -r file.txt
+```
+Sorting file content numerically
+```bash
+$ sort -n file.txt
+```
+Sorting file content reverse numerically
+```bash
+$ sort -rn file.txt
 ```
