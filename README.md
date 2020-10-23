@@ -22,6 +22,23 @@ To save the output run `$ bash nt_count.sh fasta_file > result.tsv`
 ```bash
 $ cat fasta_file | grep -v ">" | grep -o "[ATGC]" | sort | uniq -c
 ```
+### seqtool.sh
+This script take DNA fasta file as input and return Sequence Header/DNA Sequence/Complement DNA Sequence/Reverse Complement DNA Sequence/mRNA Sequence
+```bash
+$ bash seqtool.sh DNA_fasta_file
+```
+**Linux command to get complementary DNA sequence**
+```bash
+$ cat fasta_file | grep -v ">" | tr ATGC TACG
+```
+**Linux command to get reverse complementary DNA sequence**
+```bash
+$ cat fasta_file | grep -v ">" | rev | tr ATGC TACG
+```
+**Linux command to get mRNA sequence**
+```bash
+$ cat fasta_file | grep -v ">" | tr ATGC AUGC
+```
 # Linux Commands
 Display the message "Hello, World!"
 ```bash
