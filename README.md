@@ -207,3 +207,33 @@ Sorting file content reverse numerically
 ```bash
 $ sort -rn file.txt
 ```
+Sort column 2 alphabetically
+```bash
+$ sort -k2 file.txt
+```
+Sort column 2 numerically
+```bash
+$ sort -k 2n file.txt
+```
+Sort column 2 in reverse numerical order
+```bash
+$ sort -k 2rn file.txt
+```
+View column 2 & 3 of a file
+```bash
+$ cut -f2,3 file.txt
+```
+View column 2 & 3 of a space seperated file
+```bash
+$ cut -d " " -f2,3 file.txt
+           or
+$ cut -d " " -f2-3 file.txt
+```
+Sorting unique content of the file
+```bash
+$ sort -u file.txt
+```
+Unique contents of each cluster as per the data in a file
+```bash
+$ uniq file.txt
+```
