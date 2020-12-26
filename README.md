@@ -237,3 +237,27 @@ Unique contents of each cluster as per the data in a file
 ```bash
 $ uniq file.txt
 ```
+Remove everything from the current directory
+```bash
+$ rm * 
+```
+Compress file (file.txt)
+```bash
+$ gzip file.txt
+```
+Uncompress the gzip file
+```bash
+$ gunzip file.txt.gz
+```
+Archieve all the files in Folder.tar
+```bash
+$ tar -cvf Folder.tar file1 file2 file3
+```
+Compress the archieve
+```bash
+$ gzip Folder.tar
+```
+Listing all the files and folder in archieve without extracting it
+```bash
+$ tar -xvf Folder.tar
+```
