@@ -261,3 +261,68 @@ Listing all the files and folder in archieve without extracting it
 ```bash
 $ tar -xvf Folder.tar
 ```
+Add extension to all the files in a folder
+```
+$ rename "s/$/.txt/g" *
+```
+
+Add file_name to the first column of a file (file_name.txt)
+
+>Before
+
+1	3          
+4	8          
+8	0          
+10	77         
+
+>After
+
+file_name	1	3          
+file_name	4	8          
+file_name	8	0          
+file_name	10	77         
+
+```
+$ awk '{print FILENAME"\t"$0}' file_name.txt | sed "s/.txt//g"
+```
+
+Replace two columns together
+
+>Before
+
+1	3          
+4	8          
+8	0          
+10	77         
+
+>After
+
+3	1          
+8	4          
+0	8          
+77	10         
+```
+$ awk '{print $2"\t"$1}' file.txt
+```
+Merge the content of two columns to make a single column
+>Before
+
+1	3          
+4	8          
+8	0          
+10	77         
+
+>After
+
+13         
+48         
+80         
+1077             
+
+```
+$ awk '{print $1$2}' file.txt
+```
+
+Remove duplicate lines after first occurrence
+
+```$ awk '! a[$0]++' file_name.txt```
